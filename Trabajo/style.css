@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para el cuerpo */
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Panel */
+
+.PanelSuperior{
+    display: flex; /* Alinea los botones en fila */
+    gap: 10px; /* Espaciado entre los botones */
+}
+
+/* Imagen Panel*/
+
+.PanelSuperior img {
+    height: 50px; /* Ajusta el tamaño del logo */  
+    display: block;
+    margin: auto;
+    
+
+}
+
+
+.img_nav{
+    position: absolute;   /* La imagen se posiciona por encima del panel */
+    top: 4%;            /* Ajusta la posición desde la parte superior del panel */
+    left: 8%;            /* Centra la imagen horizontalmente */
+    width: 120px;         /* Ajusta el tamaño de la imagen */
+    height: 90px;
+    z-index: 1;           /* Asegura que la imagen esté encima del contenido */
+    background: white;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+
+
+/* Botones */
+button {
+    color:#ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #133510;
+}
+
+button:hover {
+    background-color: #4b793f;
+}
+
+.ingreso{
+    margin-left: auto; 
+}   
+.dropdown-container{
+    margin-left: 33%;
+    display: flex;          /* Activa el modelo Flexbox */
+    gap: 50px;              /* Espaciado uniforme entre botones */
+    justify-content: center; /* Alinea los botones en el centro horizontal */
+    padding: 0px;          /* Opcional: Espaciado interno del contenedor */    
+}
+/* Botón principal */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #133510;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #254c1f;
+    
+}
+
+/* Contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #133510;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Opciones del menú desplegable */
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #254c1f;
+}
+
+/* Mostrar el contenido al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+/* Contenedores */
+nav {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0px;
+    background-color: #001f00;
+    display: flex;
+}
+
+
+
+
+li {
+    padding: 5px 0;
+}
+
+/*Titulo*/
+.Bienvenido{
+    text-align: center;
+    padding: 20px;
+} 
+
+
+
+/* Contenedor principal de las noticias */
+.noticias {
+    display: flex; /* Organiza los elementos en un eje flexible */
+    flex-direction: column; /* Coloca las noticias en una columna */
+    gap: 20px; /* Espacio entre cada noticia */
+    padding: 50px; /* Espaciado interno del contenedor */
+    background-color: #38622f; /* Fondo suave para el área de noticias */
+    border-radius: 10px; /* Bordes redondeados para suavizar el diseño */   
+    margin: 10px 20px;
+}
+
+/* Estilo de cada tarjeta de noticia */
+.novedad {
+    display: flex; /* Flexbox para alinear los elementos internamente */
+    background-color: #ffffff; /* Fondo blanco para destacar sobre el fondo principal */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta cualquier desbordamiento de contenido */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animación para interacciones */
+    margin: 10px 20px;
+}
+/* Sección de la fecha de la noticia */
+.fecha {
+    background-color: #4b793f; /* Color verde para resaltar la fecha */
+    color: white; /* Texto blanco para contraste */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 15px; /* Espaciado interno */
+    width: 200px; /* Ancho fijo para uniformidad */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 16px; /* Tamaño de fuente más grande */
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-shrink: 0; /* Evita que el tamaño de esta sección se reduzca */
+    border-top-left-radius: 10px; /* Redondea las esquinas superiores */
+    border-bottom-left-radius: 10px; /* Redondea las esquinas inferiores */
+}
+
+/* Sección de descripción de la noticia */
+.descripcion {
+    padding: 20px; /* Espaciado interno amplio */
+    font-size: 15px; /* Tamaño de fuente más legible */
+    color: #333333; /* Texto en gris oscuro */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+.footer {
+    background-color: #333;          /* Fondo oscuro para contraste */
+    color: white;                    /* Texto en blanco para legibilidad */
+    text-align: center;               /* Centra el contenido */
+    padding: 20px 0;                  /* Espaciado arriba y abajo */
+    font-size: 14px;                  /* Tamaño de texto moderado */
+    position: relative;               /* Asegura que el footer se quede al final */
+    bottom: 0;
+    width: 100%;                      /* Asegura que cubra todo el ancho */
+}
+
+.footer-content {
+    max-width: 1200px;                /* Ancho máximo del contenido */
+    margin: 0 auto;                   /* Centra el contenido horizontalmente */
+}
+
+.footer-links {
+    margin-top: 10px;                 /* Espacio entre los párrafos y los enlaces */
+}
+
+.footer-links a {
+    color: white;                    /* Enlaces en blanco para contraste */
+    text-decoration: none;            /* Elimina el subrayado */
+    padding: 0 10px;                  /* Espaciado entre los enlaces */
+    transition: color 0.3s ease;      /* Transición suave para el color */
+}
+
+.footer-links a:hover {
+    color: #00c13f;                   /* Cambia el color al pasar el mouse */
+}
+
+/* Fondo del modal: centrado, semitransparente con desenfoque */
+.modal {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+    z-index: 1000;
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Contenedor principal del modal */
+.modal-content {
+    background-color: #28a745; /* Fondo verde */
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Botón para cerrar */
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Título del modal */
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Etiquetas de los campos */
+.modal-content label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los campos de entrada */
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Botón de enviar */
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #006400; /* Verde oscuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #004d00; /* Más oscuro al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+/* Matricula */
+
+.matricula-container {
+    margin: 20px;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-column, .right-column {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.left-column ul, .right-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-column li, .right-column li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
